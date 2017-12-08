@@ -671,8 +671,8 @@ public class MainForm extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
       
-        Modulo_Pago a = new Modulo_Pago();
-        a. setVisible(true);
+        Modulo_Pago sc = new Modulo_Pago();
+        sc. setVisible(true);
         this.setVisible(false);
 
     }//GEN-LAST:event_jButton1ActionPerformed

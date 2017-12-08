@@ -7,7 +7,7 @@ package com.gvillena;
 
 /**
  *
- * @author ASUS
+ * @author CHRISTIAN
  */
 public class Modulo_Pago extends javax.swing.JFrame {
 
@@ -42,23 +42,22 @@ public class Modulo_Pago extends javax.swing.JFrame {
         txt_caducidad = new javax.swing.JLabel();
         sp_mes = new javax.swing.JSpinner();
         sp_año = new javax.swing.JSpinner();
-        txt_importe = new javax.swing.JLabel();
-        tf_total = new javax.swing.JTextField();
         btn_confirmar = new javax.swing.JButton();
         btn_atras = new javax.swing.JButton();
         img_visa = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        img_mastercard = new javax.swing.JLabel();
+        img_american = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         txt_modulopago.setBackground(new java.awt.Color(51, 51, 255));
-        txt_modulopago.setFont(new java.awt.Font("BankGothic Lt BT", 1, 24)); // NOI18N
+        txt_modulopago.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         txt_modulopago.setText("Modulo de Pago");
 
-        txt_tarjeta.setFont(new java.awt.Font("OCR A Extended", 1, 12)); // NOI18N
+        txt_tarjeta.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         txt_tarjeta.setText("Tarjeta:");
 
+        rb_Visa.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
         rb_Visa.setText("VISA");
         rb_Visa.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -66,6 +65,7 @@ public class Modulo_Pago extends javax.swing.JFrame {
             }
         });
 
+        rb_Mastercard.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
         rb_Mastercard.setText("MASTER CARD");
         rb_Mastercard.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -73,6 +73,7 @@ public class Modulo_Pago extends javax.swing.JFrame {
             }
         });
 
+        rb_AmericanExprees.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
         rb_AmericanExprees.setText("AMERICAN EXPRESS");
         rb_AmericanExprees.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -80,10 +81,10 @@ public class Modulo_Pago extends javax.swing.JFrame {
             }
         });
 
-        txt_nombre.setFont(new java.awt.Font("OCR A Extended", 1, 12)); // NOI18N
+        txt_nombre.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         txt_nombre.setText("Nombre del Titular:");
 
-        txt_numero.setFont(new java.awt.Font("OCR A Extended", 1, 12)); // NOI18N
+        txt_numero.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         txt_numero.setText("Numero de Tarjeta:");
 
         tf_NumeroTarjeta.addActionListener(new java.awt.event.ActionListener() {
@@ -92,7 +93,7 @@ public class Modulo_Pago extends javax.swing.JFrame {
             }
         });
 
-        txt_codigo.setFont(new java.awt.Font("OCR A Extended", 1, 12)); // NOI18N
+        txt_codigo.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         txt_codigo.setText("CVV(Codigo de Seguridad):");
 
         tf_CodigoSeguridad.addActionListener(new java.awt.event.ActionListener() {
@@ -101,21 +102,12 @@ public class Modulo_Pago extends javax.swing.JFrame {
             }
         });
 
-        txt_caducidad.setFont(new java.awt.Font("OCR A Extended", 1, 12)); // NOI18N
+        txt_caducidad.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         txt_caducidad.setText("Fecha de caducidad de Tarjeta:");
         txt_caducidad.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         txt_caducidad.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
-        txt_importe.setFont(new java.awt.Font("OCR A Extended", 1, 12)); // NOI18N
-        txt_importe.setText("Importe Total:");
-
-        tf_total.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                tf_totalActionPerformed(evt);
-            }
-        });
-
-        btn_confirmar.setFont(new java.awt.Font("OCR A Extended", 1, 12)); // NOI18N
+        btn_confirmar.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         btn_confirmar.setText("CONFIRMAR PEDIDO");
         btn_confirmar.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btn_confirmar.addActionListener(new java.awt.event.ActionListener() {
@@ -124,6 +116,7 @@ public class Modulo_Pago extends javax.swing.JFrame {
             }
         });
 
+        btn_atras.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
         btn_atras.setText("Atras");
         btn_atras.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -133,10 +126,10 @@ public class Modulo_Pago extends javax.swing.JFrame {
 
         img_visa.setIcon(new javax.swing.ImageIcon("C:\\Users\\CHRISTIAN\\Desktop\\220px-Old_Visa_Logo.svg.png")); // NOI18N
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\CHRISTIAN\\Desktop\\mastercard.jpg")); // NOI18N
-        jLabel1.setText("jLabel1");
+        img_mastercard.setIcon(new javax.swing.ImageIcon("C:\\Users\\CHRISTIAN\\Desktop\\mastercard.jpg")); // NOI18N
+        img_mastercard.setText("jLabel1");
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\CHRISTIAN\\Desktop\\180px-American_Express_logo.svg.png")); // NOI18N
+        img_american.setIcon(new javax.swing.ImageIcon("C:\\Users\\CHRISTIAN\\Desktop\\180px-American_Express_logo.svg.png")); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -150,53 +143,49 @@ public class Modulo_Pago extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(94, 94, 94)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(txt_nombre)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(tf_NombreTitular))
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(txt_caducidad)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(sp_mes, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(sp_año, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(txt_importe)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(tf_total, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(txt_codigo)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(tf_CodigoSeguridad, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(txt_numero)
-                                    .addGap(18, 18, 18)
-                                    .addComponent(tf_NumeroTarjeta))
-                                .addGroup(layout.createSequentialGroup()
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(rb_Visa)
-                                        .addComponent(img_visa))
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                        .addGroup(layout.createSequentialGroup()
-                                            .addGap(18, 18, 18)
-                                            .addComponent(rb_Mastercard)
-                                            .addGap(18, 18, 18))
-                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addGap(31, 31, 31)))
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(rb_AmericanExprees)
-                                        .addGroup(layout.createSequentialGroup()
-                                            .addGap(31, 31, 31)
-                                            .addComponent(jLabel2)))))
                             .addComponent(txt_tarjeta)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(btn_atras, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(134, 134, 134)
-                                .addComponent(btn_confirmar, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addGap(41, 342, Short.MAX_VALUE))
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addComponent(txt_caducidad)
+                                            .addGap(27, 27, 27)
+                                            .addComponent(sp_mes, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addComponent(rb_Visa)
+                                                .addComponent(img_visa))
+                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                                .addGroup(layout.createSequentialGroup()
+                                                    .addGap(18, 18, 18)
+                                                    .addComponent(rb_Mastercard)
+                                                    .addGap(18, 18, 18))
+                                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                    .addComponent(img_mastercard, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addGap(31, 31, 31)))
+                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addComponent(rb_AmericanExprees)
+                                                .addGroup(layout.createSequentialGroup()
+                                                    .addGap(31, 31, 31)
+                                                    .addComponent(img_american)))))
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(sp_año, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(txt_codigo)
+                                        .addComponent(txt_numero)
+                                        .addComponent(txt_nombre))
+                                    .addGap(51, 51, 51)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addComponent(tf_CodigoSeguridad, javax.swing.GroupLayout.DEFAULT_SIZE, 160, Short.MAX_VALUE)
+                                        .addComponent(tf_NumeroTarjeta)
+                                        .addComponent(tf_NombreTitular)))
+                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                    .addComponent(btn_atras, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(109, 109, 109)
+                                    .addComponent(btn_confirmar, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                .addGap(361, 361, 361))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -212,10 +201,9 @@ public class Modulo_Pago extends javax.swing.JFrame {
                     .addComponent(rb_AmericanExprees))
                 .addGap(15, 15, 15)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(img_visa, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addComponent(img_american, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                    .addComponent(img_mastercard, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(img_visa, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(36, 36, 36)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txt_nombre)
@@ -230,17 +218,13 @@ public class Modulo_Pago extends javax.swing.JFrame {
                     .addComponent(tf_CodigoSeguridad, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(35, 35, 35)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txt_caducidad, javax.swing.GroupLayout.DEFAULT_SIZE, 23, Short.MAX_VALUE)
+                    .addComponent(txt_caducidad, javax.swing.GroupLayout.DEFAULT_SIZE, 25, Short.MAX_VALUE)
                     .addComponent(sp_mes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(sp_año, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(20, 20, 20)
+                .addGap(51, 51, 51)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txt_importe)
-                    .addComponent(tf_total, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(25, 25, 25)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btn_confirmar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btn_atras, javax.swing.GroupLayout.DEFAULT_SIZE, 28, Short.MAX_VALUE))
+                    .addComponent(btn_atras, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btn_confirmar, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(376, 376, 376))
         );
 
@@ -248,8 +232,8 @@ public class Modulo_Pago extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn_atrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_atrasActionPerformed
-        MainForm b = new MainForm();
-        b.setVisible(true);
+        MainForm al = new MainForm();
+        al.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_btn_atrasActionPerformed
 
@@ -269,12 +253,11 @@ public class Modulo_Pago extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_tf_CodigoSeguridadActionPerformed
 
-    private void tf_totalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tf_totalActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_tf_totalActionPerformed
-
     private void btn_confirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_confirmarActionPerformed
         // TODO add your handling code here:
+        Recibo pago= new Recibo();
+        pago.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_btn_confirmarActionPerformed
 
     private void rb_AmericanExpreesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rb_AmericanExpreesActionPerformed
@@ -320,9 +303,9 @@ public class Modulo_Pago extends javax.swing.JFrame {
     private javax.swing.JButton btn_atras;
     private javax.swing.JButton btn_confirmar;
     private javax.swing.ButtonGroup buttonGroup1;
+    private javax.swing.JLabel img_american;
+    private javax.swing.JLabel img_mastercard;
     private javax.swing.JLabel img_visa;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JRadioButton rb_AmericanExprees;
     private javax.swing.JRadioButton rb_Mastercard;
     private javax.swing.JRadioButton rb_Visa;
@@ -331,10 +314,8 @@ public class Modulo_Pago extends javax.swing.JFrame {
     private javax.swing.JTextField tf_CodigoSeguridad;
     private javax.swing.JTextField tf_NombreTitular;
     private javax.swing.JTextField tf_NumeroTarjeta;
-    private javax.swing.JTextField tf_total;
     private javax.swing.JLabel txt_caducidad;
     private javax.swing.JLabel txt_codigo;
-    private javax.swing.JLabel txt_importe;
     private javax.swing.JLabel txt_modulopago;
     private javax.swing.JLabel txt_nombre;
     private javax.swing.JLabel txt_numero;
